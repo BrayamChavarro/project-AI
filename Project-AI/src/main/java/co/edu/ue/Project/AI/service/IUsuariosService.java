@@ -10,7 +10,7 @@ public interface IUsuariosService {
     Usuarios actualizarUsuarios (Usuarios usuarios);
     
     List<Usuarios> todasUsuarios();
-    Usuarios buscarIdUsuarios(int id);
+    Usuarios buscarIdUsuarios(int usu_id);
     
-    boolean bajaUsuarios(int id);
+    boolean bajaUsuarios(int usu_id);
 }

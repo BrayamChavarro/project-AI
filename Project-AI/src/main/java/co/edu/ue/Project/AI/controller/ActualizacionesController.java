@@ -4,7 +4,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import co.edu.ue.Project.AI.model.Actualizaciones;
-import co.edu.ue.Project.AI.service.IActactualizacionesService;
+import co.edu.ue.Project.AI.service.IActualizacionesService;
 
 import java.util.List;
 
@@ -34,7 +34,7 @@ public class ActualizacionesController {
         return service.todasActualizaciones();
     }
     
-    @GetMapping(value="actualizaciones/{cat_id}")
+    @GetMapping(value="actualizaciones/{act_id}")
     public Actualizaciones getActualizacionesById(@PathVariable int act_id) {
         return service.buscarIdActualizaciones(act_id);
     }
@@ -45,17 +45,17 @@ public class ActualizacionesController {
     }
     
     @PutMapping(value="actualizaciones")
-    public Actualizaciones putUsuarios(@RequestBody Actualizaciones actualizaciones) {
-        return service.actualizarActualizacion(actualizaciones);
+    public Actualizaciones putActualizaciones(@RequestBody Actualizaciones actualizaciones) {
+        return service.actualizarActualizaciones(actualizaciones);
     }
     
-    @DeleteMapping(value = "/actualizaciones/{cat_id}")
+    @DeleteMapping(value = "/actualizaciones/{act_id}")
     public ResponseEntity<String> deleteActualizaciones(@PathVariable int act_id) {
     boolean isDeleted = service.bajaActualizaciones(act_id);
     if (isDeleted) {
-        return ResponseEntity.ok("actualizaciones eliminada correctamente.");
+        return ResponseEntity.ok("actualizacion eliminada correctamente.");
     } else {
-        return ResponseEntity.status(HttpStatus.NOT_FOUND).body("actualizaciones no encontrada.");
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).body("actualizacion no encontrada.");
     }
 }
 

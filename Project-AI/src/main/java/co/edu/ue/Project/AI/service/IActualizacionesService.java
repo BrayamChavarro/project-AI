@@ -11,7 +11,7 @@ public interface IActualizacionesService {
     Actualizaciones actualizarActualizaciones (Actualizaciones actualizaciones);
     
     List<Actualizaciones> todasActualizaciones();
-    Actualizaciones buscarIdActualizaciones(int cat_id);
+    Actualizaciones buscarIdActualizaciones(int act_id);
     
-    boolean bajaActualizaciones(int cat_id);
+    boolean bajaActualizaciones(int act_id);
 }

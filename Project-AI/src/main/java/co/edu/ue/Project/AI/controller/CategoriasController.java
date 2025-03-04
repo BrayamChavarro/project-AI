@@ -45,7 +45,7 @@ public class CategoriasController {
     }
     
     @PutMapping(value="categorias")
-    public Categorias putUsuarios(@RequestBody Categorias categorias) {
+    public Categorias putCategorias(@RequestBody Categorias categorias) {
         return service.actualizarCategorias(categorias);
     }
     

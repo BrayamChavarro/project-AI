@@ -20,8 +20,8 @@ public class ActualizacionesService implements IActualizacionesService {
     }
 
     @Override
-    public Actualizaciones actualizarCategorias(Actualizaciones actualizaciones) {
-       return dao.uppCategorias(actualizaciones);
+    public Actualizaciones actualizarActualizaciones(Actualizaciones actualizaciones) {
+       return dao.uppEventos(actualizaciones);
     }
 
     @Override

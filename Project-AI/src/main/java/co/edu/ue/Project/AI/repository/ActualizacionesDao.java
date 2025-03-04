@@ -22,7 +22,7 @@ public class ActualizacionesDao implements IActualizaciones {
     }
 
     @Override
-    public Actualizaciones uppCategorias(Actualizaciones actualizaciones) {
+    public Actualizaciones uppActualizaciones(Actualizaciones actualizaciones) {
         return jpa.save(actualizaciones);
     }
 

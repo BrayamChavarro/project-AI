@@ -3,8 +3,8 @@ package co.edu.ue.Project.AI.controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import co.edu.ue.Project.AI.model.Eventos;
-import co.edu.ue.Project.AI.service.IEventosService;
+import co.edu.ue.Project.AI.model.Fuentes;
+import co.edu.ue.Project.AI.service.IFuentesService;
 
 import java.util.List;
 

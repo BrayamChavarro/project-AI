@@ -12,7 +12,7 @@ import co.edu.ue.Project.AI.model.Fuentes;
 public class FuentesDao implements IFuentes {
 
     @Autowired
-    IEventosJpa jpa;
+    IFuentesJpa jpa;
     private final Logger log = LoggerFactory.getLogger(FuentesDao.class);
 
     @Override

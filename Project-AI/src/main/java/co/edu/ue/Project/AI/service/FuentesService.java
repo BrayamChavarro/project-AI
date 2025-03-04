@@ -1,7 +1,7 @@
 package co.edu.ue.Project.AI.service;
 
-import co.edu.ue.Project.AI.model.Eventos;
-import co.edu.ue.Project.AI.repository.IEventos;
+import co.edu.ue.Project.AI.model.Fuentes;
+import co.edu.ue.Project.AI.repository.IFuentes;
 
 import java.util.List;
 

@@ -16,7 +16,7 @@ public class MonitoreoDao implements IMonitoreo {
     private final Logger log = LoggerFactory.getLogger(MonitoreoDao.class);
 
     @Override
-    public List<Monitoreo> addFuentes(Monitoreo monitoreo) {
+    public List<Monitoreo> addMonitoreo(Monitoreo monitoreo) {
         jpa.save(monitoreo);
         return getAllMonitoreo();
     }

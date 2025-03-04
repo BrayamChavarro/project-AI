@@ -40,12 +40,12 @@ public class MonitoreoController {
     }
 
     @PostMapping(value="monitoreo/add")
-    public List<Monitoreo> postMonitoreo(@RequestBody Eventos monitoreo){
+    public List<Monitoreo> postMonitoreo(@RequestBody Monitoreo monitoreo){
         return service.agregarMonitoreo(monitoreo);
     }
     
     @PutMapping(value="monitoreo")
-    public Monitoreo putMonitoreo(@RequestBody Eventos monitoreo) {
+    public Monitoreo putMonitoreo(@RequestBody Monitoreo monitoreo) {
         return service.actualizarMonitoreo(monitoreo);
     }
     

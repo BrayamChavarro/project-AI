@@ -2,18 +2,15 @@ package co.edu.ue.Project.AI.service;
 
 import java.util.List;
 
-import co.edu.ue.Project.AI.model.usuarios;
+import co.edu.ue.Project.AI.model.Usuarios;
 
-public interface IusuariosService {
-	
-	List<usuarios> agregarusuarios(usuarios usuarios);
-	usuarios actualizarusuarios (usuarios usuarios);
-	
-	List<usuarios> todasusuarios();
-	usuarios buscarIdusuarios(int id);
-	
-	
-	boolean bajausuarios(int id);
-
-
+public interface IUsuariosService {
+    
+    List<Usuarios> agregarUsuarios(Usuarios usuarios);
+    Usuarios actualizarUsuarios (Usuarios usuarios);
+    
+    List<Usuarios> todasUsuarios();
+    Usuarios buscarIdUsuarios(int id);
+    
+    boolean bajaUsuarios(int id);
 }

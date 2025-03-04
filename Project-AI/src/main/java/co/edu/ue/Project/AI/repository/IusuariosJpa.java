@@ -2,8 +2,8 @@ package co.edu.ue.Project.AI.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import co.edu.ue.Project.AI.model.usuarios;
+import co.edu.ue.Project.AI.model.Usuarios;
 
-public interface IusuariosJpa extends JpaRepository<usuarios, Integer> {
+public interface IUsuariosJpa extends JpaRepository<Usuarios, Integer> {
 
 }

@@ -1,19 +1,16 @@
 package co.edu.ue.Project.AI.repository;
 
-
 import java.util.List;
 
-import co.edu.ue.Project.AI.model.usuarios;
+import co.edu.ue.Project.AI.model.Usuarios;
 
-public interface Iusuarios {
-	
-	List<usuarios> addusuarios(usuarios usuarios);
-	usuarios uppusuarios (usuarios usuarios);
-	
-	List<usuarios> getAllusuarios();
-	usuarios getIdusuarios(int id);
-	
-	boolean deleteusuarios(int id);
-
-
+public interface IUsuarios {
+    
+    List<Usuarios> addUsuarios(Usuarios usuarios);
+    Usuarios uppUsuarios (Usuarios usuarios);
+    
+    List<Usuarios> getAllUsuarios();
+    Usuarios getIdUsuarios(int id);
+    
+    boolean deleteUsuarios(int id);
 }

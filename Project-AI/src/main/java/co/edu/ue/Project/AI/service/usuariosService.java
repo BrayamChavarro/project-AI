@@ -1,46 +1,41 @@
 package co.edu.ue.Project.AI.service;
 
-import co.edu.ue.Project.AI.model.usuarios;
-import co.edu.ue.Project.AI.repository.Iusuarios;
+import co.edu.ue.Project.AI.model.Usuarios;
+import co.edu.ue.Project.AI.repository.IUsuarios;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-
-
 @Service
-public class usuariosService implements IusuariosService{
+public class UsuariosService implements IUsuariosService {
 
     @Autowired
-    Iusuarios dao;
+    IUsuarios dao;
 
     @Override
-    public List<usuarios> agregarusuarios(usuarios usuarios) {
-        
-        return dao.addusuarios(usuarios);
+    public List<Usuarios> agregarUsuarios(Usuarios usuarios) {
+        return dao.addUsuarios(usuarios);
     }
 
     @Override
-    public usuarios actualizarusuarios(usuarios usuarios) {
-       return dao.uppusuarios(usuarios);
+    public Usuarios actualizarUsuarios(Usuarios usuarios) {
+       return dao.uppUsuarios(usuarios);
     }
 
     @Override
-    public List<usuarios> todasusuarios() {
-        return  dao.getAllusuarios();
+    public List<Usuarios> todasUsuarios() {
+        return dao.getAllUsuarios();
     }
 
     @Override
-    public usuarios buscarIdusuarios(int usu_id) {
-         return dao.getIdusuarios(usu_id); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public Usuarios buscarIdUsuarios(int usu_id) {
+         return dao.getIdUsuarios(usu_id);
     }
 
     @Override
-    public boolean bajausuarios(int usu_id) {
-         return dao.deleteusuarios(usu_id); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public boolean bajaUsuarios(int usu_id) {
+         return dao.deleteUsuarios(usu_id);
     }
-	
-	
 }

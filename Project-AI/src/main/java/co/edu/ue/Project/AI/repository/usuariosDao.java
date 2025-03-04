@@ -1,54 +1,48 @@
 package co.edu.ue.Project.AI.repository;
 
-
 import java.util.List;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-import co.edu.ue.Project.AI.model.usuarios;
+import co.edu.ue.Project.AI.model.Usuarios;
 
 @Repository
-public class usuariosDao implements Iusuarios {
+public class UsuariosDao implements IUsuarios {
 
-	//inyeccion de dependencias por interface
-	@Autowired
-	IusuariosJpa jpa;
-	private final Logger log = LoggerFactory.getLogger(usuariosDao.class);
+    @Autowired
+    IUsuariosJpa jpa;
+    private final Logger log = LoggerFactory.getLogger(UsuariosDao.class);
 
-	
-        @Override
-	public List<usuarios> addusuarios(usuarios usuarios) {
-		jpa.save(usuarios);
-		return getAllusuarios();
-		
-	}
-
-	@Override
-	public usuarios uppusuarios(usuarios usuarios) {
-		return jpa.save(usuarios);
-	}
-
-	@Override
-	public List<usuarios> getAllusuarios() {
-		return jpa.findAll();
-	}
-
-	@Override
-	public usuarios getIdusuarios(int usu_id) {
-    return jpa.findById(usu_id)
-            .orElseThrow(() -> new RuntimeException("usuario no encontrado con id " + usu_id));
-}
-
-	@Override
-	public boolean deleteusuarios(int usu_id) {
-    if (jpa.existsById(usu_id)) {
-        jpa.deleteById(usu_id);
-        return true;
+    @Override
+    public List<Usuarios> addUsuarios(Usuarios usuarios) {
+        jpa.save(usuarios);
+        return getAllUsuarios();
     }
-    return false;
-}
 
+    @Override
+    public Usuarios uppUsuarios(Usuarios usuarios) {
+        return jpa.save(usuarios);
+    }
 
+    @Override
+    public List<Usuarios> getAllUsuarios() {
+        return jpa.findAll();
+    }
+
+    @Override
+    public Usuarios getIdUsuarios(int usu_id) {
+        return jpa.findById(usu_id)
+            .orElseThrow(() -> new RuntimeException("Usuario no encontrado con id " + usu_id));
+    }
+
+    @Override
+    public boolean deleteUsuarios(int usu_id) {
+        if (jpa.existsById(usu_id)) {
+            jpa.deleteById(usu_id);
+            return true;
+        }
+        return false;
+    }
 }

@@ -10,7 +10,7 @@ public interface IUsuarios {
     Usuarios uppUsuarios (Usuarios usuarios);
     
     List<Usuarios> getAllUsuarios();
-    Usuarios getIdUsuarios(int id);
+    Usuarios getIdUsuarios(int usu_id);
     
-    boolean deleteUsuarios(int id);
+    boolean deleteUsuarios(int usu_id);
 }

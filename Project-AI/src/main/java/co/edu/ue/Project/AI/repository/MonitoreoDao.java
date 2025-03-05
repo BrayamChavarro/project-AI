@@ -38,7 +38,7 @@ public class MonitoreoDao implements IMonitoreo {
     }
 
     @Override
-    public boolean deleteMonitoreo(int fue_id) {
+    public boolean deleteMonitoreo(int mon_id) {
         if (jpa.existsById(mon_id)) {
             jpa.deleteById(mon_id);
             return true;

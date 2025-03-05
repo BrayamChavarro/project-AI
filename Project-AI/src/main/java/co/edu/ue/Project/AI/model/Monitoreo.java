@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 
 @Entity
 @Table(name="monitoreo")
-@NamedQuery(name="monitoreo.findAll", query="SELECT m FROM Monitoreo m")
+@NamedQuery(name="Monitoreo.findAll", query="SELECT m FROM Monitoreo m")
 public class Monitoreo implements Serializable {
     private static final long serialVersionUID = 1L;
 

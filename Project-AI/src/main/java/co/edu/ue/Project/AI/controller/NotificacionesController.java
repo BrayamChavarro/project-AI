@@ -40,8 +40,8 @@ public class NotificacionesController {
     }
 
     @PostMapping(value="notificaciones/add")
-    public List<Notificaciones> postMonitoreo(@RequestBody Notificaciones notificaciones){
-        return service.agregarMonitoreo(notificaciones);
+    public List<Notificaciones> postNotificaciones(@RequestBody Notificaciones notificaciones){
+        return service.agregarNotificaciones(notificaciones);
     }
     
     @PutMapping(value="notificaciones")

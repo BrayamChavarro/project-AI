@@ -8,10 +8,10 @@ import co.edu.ue.Project.AI.model.Subscripciones;
 public interface ISubscripcionesService {
     
     List<Subscripciones> agregarSubscripciones(Subscripciones subscripciones);
-    Subscripciones actualizaSubscripciones (Subscripciones subscripciones);
+    Subscripciones actualizarSubscripciones (Subscripciones subscripciones);
     
     List<Subscripciones> todasSubscripciones();
-    Monitoreo buscarIdSubscripciones(int sub_id);
+    Subscripciones buscarIdSubscripciones(int sub_id);
     
     boolean bajaSubscripciones(int sub_id);
 }

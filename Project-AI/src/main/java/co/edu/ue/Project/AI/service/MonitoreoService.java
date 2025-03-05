@@ -32,7 +32,7 @@ public class MonitoreoService implements IMonitoreoService {
     @Override
     public Monitoreo buscarIdMonitoreo(int mon_id) {
          return dao.getIdMonitoreo(mon_id);
-
+    }
     @Override
     public boolean bajaMonitoreo(int mon_id) {
          return dao.deleteMonitoreo(mon_id);

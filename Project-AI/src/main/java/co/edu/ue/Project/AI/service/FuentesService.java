@@ -32,7 +32,7 @@ public class FuentesService implements IFuentesService {
     @Override
     public Fuentes buscarIdFuentes(int fue_id) {
          return dao.getIdFuentes(fue_id);
-
+    }
     @Override
     public boolean bajaFuentes(int fue_id) {
          return dao.deleteFuentes(fue_id);

@@ -32,7 +32,7 @@ public class SubscripcionesService implements ISubscripcionesService {
     @Override
     public Subscripciones buscarIdSubscripciones(int sub_id) {
          return dao.getIdSubscripciones(sub_id);
-
+    }
     @Override
     public boolean bajaSubscripciones(int sub_id) {
          return dao.deleteSubscripciones(sub_id);

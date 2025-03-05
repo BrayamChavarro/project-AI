@@ -34,7 +34,7 @@ public class SubscripcionesDao implements ISubscripciones {
     @Override
     public Subscripciones getIdSubscripciones(int sub_id) {
         return jpa.findById(sub_id)
-            .orElseThrow(() -> new RuntimeException("Subscripcion no encontrado con id " + mon_id));
+            .orElseThrow(() -> new RuntimeException("Subscripcion no encontrado con id " + sub_id));
     }
 
     @Override

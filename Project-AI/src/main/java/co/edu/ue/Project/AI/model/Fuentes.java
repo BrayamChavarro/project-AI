@@ -33,6 +33,76 @@ public class Fuentes implements Serializable {
     private String fue_ultimo_escaneo;
 
 
+    public int getFue_id() {
+        return fue_id;
+    }
+
+
+    public void setFue_id(int fue_id) {
+        this.fue_id = fue_id;
+    }
+
+
+    public String getFue_nombre() {
+        return fue_nombre;
+    }
+
+
+    public void setFue_nombre(String fue_nombre) {
+        this.fue_nombre = fue_nombre;
+    }
+
+
+    public String getFue_url() {
+        return fue_url;
+    }
+
+
+    public void setFue_url(String fue_url) {
+        this.fue_url = fue_url;
+    }
+
+
+    public String getFue_tipo() {
+        return fue_tipo;
+    }
+
+
+    public void setFue_tipo(String fue_tipo) {
+        this.fue_tipo = fue_tipo;
+    }
+
+
+    public String getFue_activo() {
+        return fue_activo;
+    }
+
+
+    public void setFue_activo(String fue_activo) {
+        this.fue_activo = fue_activo;
+    }
+
+
+    public String getFue_parametros_extraccion() {
+        return fue_parametros_extraccion;
+    }
+
+
+    public void setFue_parametros_extraccion(String fue_parametros_extraccion) {
+        this.fue_parametros_extraccion = fue_parametros_extraccion;
+    }
+
+
+    public String getFue_ultimo_escaneo() {
+        return fue_ultimo_escaneo;
+    }
+
+
+    public void setFue_ultimo_escaneo(String fue_ultimo_escaneo) {
+        this.fue_ultimo_escaneo = fue_ultimo_escaneo;
+    }
+
+
     public Fuentes() {
     }
     

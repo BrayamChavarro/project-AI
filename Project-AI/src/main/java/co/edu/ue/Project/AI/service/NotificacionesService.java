@@ -32,7 +32,7 @@ public class NotificacionesService implements INotificacionesService {
     @Override
     public Notificaciones buscarIdNotificaciones(int not_id) {
          return dao.getIdNotificaciones(not_id);
-
+    }
     @Override
     public boolean bajaNotificaciones(int not_id) {
          return dao.deleteNotificaciones(not_id);

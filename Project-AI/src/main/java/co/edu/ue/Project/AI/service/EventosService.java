@@ -32,7 +32,7 @@ public class EventosService implements IEventosService {
     @Override
     public Eventos buscarIdEventos(int eve_id) {
          return dao.getIdEventos(eve_id);
-
+    }
     @Override
     public boolean bajaEventos(int eve_id) {
          return dao.deleteEventos(eve_id);

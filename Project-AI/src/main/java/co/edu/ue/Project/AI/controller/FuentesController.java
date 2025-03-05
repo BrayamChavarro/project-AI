@@ -29,19 +29,19 @@ public class FuentesController {
     @Autowired
     IFuentesService service;
     
-    @GetMapping(value="eventos")
+    @GetMapping(value="fuentes")
     public List<Fuentes> getAllFuentes() {
         return service.todasFuentes();
     }
     
-    @GetMapping(value="eventos/{fue_id}")
+    @GetMapping(value="fuentes/{fue_id}")
     public Fuentes getFuentesById(@PathVariable int fue_id) {
         return service.buscarIdFuentes(fue_id);
     }
 
     @PostMapping(value="fuentes/add")
     public List<Fuentes> postFuentes(@RequestBody Fuentes fuentes){
-        return service.agregarFuentes(eventos);
+        return service.agregarFuentes(fuentes);
     }
     
     @PutMapping(value="fuentes")

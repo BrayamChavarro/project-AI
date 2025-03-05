@@ -16,7 +16,7 @@ public class NotificacionesDao implements INotificaciones {
     private final Logger log = LoggerFactory.getLogger(NotificacionesDao.class);
 
     @Override
-    public List<Notificaciones> addFuentes(Notificaciones notificaciones) {
+    public List<Notificaciones> addNotificaciones(Notificaciones notificaciones) {
         jpa.save(notificaciones);
         return getAllNotificaciones();
     }

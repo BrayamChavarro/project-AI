@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 
 @Entity
 @Table(name="subscripciones")
-@NamedQuery(name="SubscripcionesfindAll", query="SELECT m FROM Subscripciones m")
+@NamedQuery(name="Subscripciones.findAll", query="SELECT m FROM Subscripciones m")
 public class Subscripciones implements Serializable {
     private static final long serialVersionUID = 1L;
 
@@ -25,6 +25,62 @@ public class Subscripciones implements Serializable {
 
 
     
+
+    public int getSub_id() {
+        return sub_id;
+    }
+
+
+
+
+    public void setSub_id(int sub_id) {
+        this.sub_id = sub_id;
+    }
+
+
+
+
+    public int getUsu_id() {
+        return usu_id;
+    }
+
+
+
+
+    public void setUsu_id(int usu_id) {
+        this.usu_id = usu_id;
+    }
+
+
+
+
+    public String getSub_tipo_notificacion() {
+        return sub_tipo_notificacion;
+    }
+
+
+
+
+    public void setSub_tipo_notificacion(String sub_tipo_notificacion) {
+        this.sub_tipo_notificacion = sub_tipo_notificacion;
+    }
+
+
+
+
+    public String getSub_activo() {
+        return sub_activo;
+    }
+
+
+
+
+    public void setSub_activo(String sub_activo) {
+        this.sub_activo = sub_activo;
+    }
+
+
+
 
     public Subscripciones() {
     }

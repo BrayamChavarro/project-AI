@@ -21,7 +21,7 @@ public class ActualizacionesService implements IActualizacionesService {
 
     @Override
     public Actualizaciones actualizarActualizaciones(Actualizaciones actualizaciones) {
-       return dao.uppEventos(actualizaciones);
+       return dao.uppActualizaciones(actualizaciones);
     }
 
     @Override
@@ -32,7 +32,7 @@ public class ActualizacionesService implements IActualizacionesService {
     @Override
     public Actualizaciones buscarIdActualizaciones(int act_id) {
          return dao.getIdActualizaciones(act_id);
-
+    }
     @Override
     public boolean bajaActualizaciones(int act_id) {
          return dao.deleteActualizaciones(act_id);

@@ -1,2 +1,0 @@
-USE eventosdb;
-DESCRIBE usuarios;
